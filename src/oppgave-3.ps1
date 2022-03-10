@@ -1,6 +1,6 @@
 
-
 $webRequest = Invoke-WebRequest -Uri http://nav-deckofcards.herokuapp.com/shuffle
+
 $kortstokk = $webRequest.Content | ConvertFrom-Json
 #write-output $kortstokk
 #foreach ( $kort in $kortstokk) {
