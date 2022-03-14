@@ -16,7 +16,7 @@ jobs:
       - name: Login via Az module
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDS }}
+          creds: ${{ secrets.runeb_gdv_secrets }}
           enable-AzPSSession: true
 
       - name: 'Run cleanup script'
